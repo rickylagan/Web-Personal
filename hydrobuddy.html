@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroBuddy – Portofolio Proyek</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e4e6eb;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .label {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: #58a6ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    img, video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #238636;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2ea043;
+      transform: scale(1.05);
+    }
+
+    .back-home {
+      text-align: center;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #6e7681;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HydroBuddy</h1>
+    <p>Aplikasi Pengingat Minum Air – Studi Kasus UI/UX</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="label">Deskripsi Proyek</div>
+      <p>
+        HydroBuddy adalah aplikasi mobile yang membantu pengguna menjaga hidrasi tubuh melalui notifikasi harian, target minum, dan pelacakan jumlah air yang dikonsumsi. Desain ini dibuat sebagai bagian dari studi UI/UX menggunakan Figma dan Adobe XD.
+      </p>
+    </section>
+
+    <section>
+      <div class="label">Mockup Desain</div>
+      <div class="mockup-grid">
+        <img src="app/mockup-1.png" alt="Mockup 1 HydroBuddy">
+        <img src="app/dark-1.png" alt="Mockup 2 HydroBuddy">
+        <img src="app/mockup-2.png" alt="Mockup 3 HydroBuddy">
+        <img src="app/dark-3.png" alt="Mockup 4 HydroBuddy">
+        <img src="app/mockup-3.png" alt="Mockup 5 HydroBuddy">
+        <img src="app/dark-4.png" alt="Mockup 6 HydroBuddy">
+        <img src="app/mockup-4.png" alt="Mockup 7 HydroBuddy">
+        <img src="app/dark-5.png" alt="Mockup 8 HydroBuddy">
+        <img src="app/mockup-5.png" alt="Mockup 9 HydroBuddy">
+        <img src="app/dark-2.png" alt="Mockup 10 HydroBuddy">
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Flowchart Pengguna</div>
+      <img src="img/Flowchart.png" alt="Flowchart Pengguna HydroBuddy" />
+    </section>
+
+    <section>
+      <div class="label">Demo Prototipe (Video)</div>
+      <video controls>
+        <source src="video/hydrobuddy-demo.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung pemutar video.
+      </video>
+      <a href="video/hydrobuddy-demo.mp4" class="button" download>⬇️ Download Video</a>
+    </section>
+
+    <section>
+      <div class="label">Unduh Studi Kasus (PDF)</div>
+      <a href="file/HydroBuddy-CaseStudy.pdf" class="button" download>⬇️ Download PDF</a>
+    </section>
+
+    <section class="back-home">
+      <a href="index.html" class="button">← Kembali ke Beranda</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <em>Ricky Roberto Lagan</em>. Seluruh hak cipta dilindungi.</p>
+  </footer>
+</body>
+</html>

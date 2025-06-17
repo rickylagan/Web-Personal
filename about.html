@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me | Ricky Roberto Lagan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e4e6eb;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #e4e6eb;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #58a6ff;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .about-heading {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #58a6ff;
+    }
+
+    .about-box {
+      background: #161b22;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #f0f6fc;
+    }
+
+    .about-box p {
+      line-height: 1.8;
+      color: #c9d1d9;
+      font-size: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-tag {
+      background-color: #21262d;
+      color: #58a6ff;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6e7681;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .about-section {
+        flex-direction: row;
+        gap: 3rem;
+      }
+      .about-box {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><strong>Ricky</strong></div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="case-study.html">Case Study</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section" data-aos="fade-up">
+    <div class="about-box">
+      <h2>Hi, I'm Ricky Roberto Lagan 👋</h2>
+      <p>Saya adalah seorang <strong>UI/UX Designer</strong> yang fokus menciptakan pengalaman pengguna yang intuitif, fungsional, dan estetis. Dengan latar belakang sebagai Warehouse Staff dan semangat belajar otodidak, saya telah membangun keterampilan desain menggunakan Figma, Adobe XD, dan Webflow.</p>
+
+      <p>Fokus utama saya adalah membuat desain yang menyelesaikan masalah nyata melalui pendekatan berbasis riset. Saya menikmati setiap proses mulai dari wireframing, prototyping, usability testing hingga live hand-off ke developer atau Webflow.</p>
+
+      <p>Saya terbuka untuk kolaborasi, freelance, maupun full-time opportunities. Yuk terhubung!</p>
+
+      <div class="skills">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Adobe XD</span>
+        <span class="skill-tag">Webflow</span>
+        <span class="skill-tag">UI Design</span>
+        <span class="skill-tag">UX Research</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ricky Roberto Lagan. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    if (hamburger) {
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    }
+  </script>
+</body>
+</html>

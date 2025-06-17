@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Study | Ricky Roberto Lagan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e4e6eb;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #e4e6eb;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #58a6ff;
+    }
+
+    .case-study {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .case-study h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #58a6ff;
+    }
+
+    .case-study .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      color: #c9d1d9;
+    }
+
+    .case-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .case-box {
+      background: #161b22;
+      padding: 2rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .case-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .case-box h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #f0f6fc;
+    }
+
+    .case-box p {
+      font-size: 0.95rem;
+      color: #8b949e;
+      margin-bottom: 1.25rem;
+    }
+
+    .view-btn {
+      display: inline-block;
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .view-btn:hover {
+      border-bottom: 1px solid #58a6ff;
+    }
+
+    .coming-soon {
+      opacity: 0.6;
+      filter: grayscale(40%);
+      pointer-events: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6e7681;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (opsional, bisa kamu tambah jika ingin) -->
+  <div class="navbar">
+    <div><strong>Ricky Roberto</strong></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#case-study">Case Study</a></li>
+    </ul>
+  </div>
+
+  <!-- Section Case Study -->
+  <section class="case-study" id="case-study">
+    <h1>My Case Studies</h1>
+    <p class="intro">Berikut adalah proyek desain UI/UX yang telah saya kerjakan. Proyek lainnya akan segera hadir.</p>
+
+    <div class="case-grid">
+      <!-- Proyek aktif -->
+<div class="case-box" data-aos="zoom-in">
+  <h2>HydroBuddy - Water Reminder App</h2>
+  <p>Aplikasi pengingat minum air untuk menjaga hidrasi, dengan notifikasi dan UI yang intuitif.</p>
+  <a href="hydrobuddy-case-study.html" class="view-btn">Lihat Detail</a>
+</div>
+
+
+      <!-- Coming soon 1 -->
+      <div class="case-box coming-soon" data-aos="zoom-in" data-aos-delay="100">
+        <h2><i class="fas fa-lock"></i> Coming Soon</h2>
+        <p>Proyek desain UI/UX berikutnya akan segera hadir di sini.</p>
+        <span class="view-btn">Belum Tersedia</span>
+      </div>
+
+      <!-- Coming soon 2 -->
+      <div class="case-box coming-soon" data-aos="zoom-in" data-aos-delay="200">
+        <h2><i class="fas fa-lock"></i> Coming Soon</h2>
+        <p>Sedang dalam proses. Nantikan proyek terbaru saya selanjutnya.</p>
+        <span class="view-btn">Belum Tersedia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ricky Roberto Lagan. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
